@@ -1,0 +1,11 @@
+@import "/app/css/normalize.css";
+@import "/app/css/base.css";
+.my-block {
+  color: red;
+}
+.my-block--myMod {
+  border: 4px solid red;
+}
+h1 {
+  color: red;
+}
