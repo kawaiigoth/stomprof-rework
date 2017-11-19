@@ -1,3 +1,23 @@
-.my-mixin(){
-  color : @mycolor;
+.clearfix(){
+  &::after{
+    clear:both;
+  }
+}
+
+
+.container(){
+  width: 320px;
+  margin : 0 auto;
+  @media @tablet-widths {
+    width : 640px;
+  };
+  @media @desktop-widths {
+    width: 960px;
+  };
+}
+
+.font(@size : 14px, @color : @text-color-black, @weight : 400){
+  font: 400 @size/20px Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-weight: @weight;
+  color: @color;
 }

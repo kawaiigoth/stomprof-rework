@@ -30,6 +30,7 @@ gulp.task('less', function (cb) {
             strictMath: true,
             strictUnits: true
         })),
+        useref(),
         prefix('last 2 versions'),
         gulp.dest('app/css/'),
         browserSync.reload({

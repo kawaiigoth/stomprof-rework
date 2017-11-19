@@ -1,14 +1,12 @@
 //Import normalize and base styles
-@import "/app/css/normalize.css";
-@import "/app/css/base.css";
+@import (inline) "../css/normalize.css";
+@import (inline) "../css/base.css";
 
 //import variables and mixins
 @import "variables.less";
 @import "mixins.less";
 
 //Import block styles
-@import "block/my-block.less";
+@import "block/btn.less";
+@import "block/header-main.less";
 
-h1 {
-  color : @mycolor;
-}

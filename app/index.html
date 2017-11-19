@@ -1,40 +1,61 @@
 <!doctype html>
 <html class="no-js" lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Стоматология "Профессионал"</title>
-        <meta name="description" content="Стоматология 'Профессионал', одна из самых лучших в городе Энгельсе.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Стоматология "Профессионал"</title>
+    <meta name="description" content="Стоматология 'Профессионал', одна из самых лучших в городе Энгельсе.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- build:css css/styles.min.css -->
-        <link rel="stylesheet" href="css/styles.css">
-        <!-- endbuild -->
-    </head>
-    <body>
-    <h1>READY</h1>
-    <hr>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-    <!-- build:js js/main.min.js -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
+</head>
+<body>
+<header class="header-main">
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+    <div class="header-main__top">
+        <a class="header-main__logo"><img src="img/logo_small_low.png" width="35" height="35"></a>
+        <span class="header-main__phone-number">8 499 <b>245-62-68</b></span>
+        <div class="header-main__nav-toggler header-main__nav-toggler--closed"></div>
+    </div>
+    <nav class="header-main__navigation">
+        <span class="header-main__time-title">Время работы:</span>
+        <span class="header-main__time"><b>с 9:00 до 19:00, Пн — Сб</b></span>
+        <div class="header-main__button-wrap"><a href="#" class="btn header-main__button">Записаться</a></div>
+        <ul class="header-main__navigation-list">
+            <li><a>Клиника</a></li>
+            <li><a>Услуги</a></li>
+            <li><a>Цены</a></li>
+            <li><a>Акции</a></li>
+            <li><a>Пациентам</a></li>
+            <li><a>Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<!-- build:js js/main.min.js -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 </html>
