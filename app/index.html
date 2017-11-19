@@ -18,9 +18,9 @@
     <div class="header-main__top">
         <a class="header-main__logo"><img src="img/logo_small_low.png" width="35" height="35"></a>
         <span class="header-main__phone-number">8 499 <b>245-62-68</b></span>
-        <div class="header-main__nav-toggler header-main__nav-toggler--closed"></div>
+        <div id="Hamburger" class="header-main__nav-toggler header-main__nav-toggler--closed"></div>
     </div>
-    <nav class="header-main__navigation">
+    <nav id="MobileMenu" class="header-main__navigation header-main__navigation--closed">
         <span class="header-main__time-title">Время работы:</span>
         <span class="header-main__time"><b>с 9:00 до 19:00, Пн — Сб</b></span>
         <div class="header-main__button-wrap"><a href="#" class="btn header-main__button">Записаться</a></div>
@@ -45,7 +45,21 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
-
+<script>
+    var hamburger = document.getElementById("Hamburger");
+    var mobileMenu = document.getElementById("MobileMenu");
+    hamburger.onclick = (function (e) {
+        if(hamburger.classList.contains("header-main__nav-toggler--closed")) {
+            hamburger.classList.remove("header-main__nav-toggler--closed");
+            hamburger.classList.add("header-main__nav-toggler--opened");
+            mobileMenu.classList.remove("header-main__navigation--closed");
+        } else if (hamburger.classList.contains("header-main__nav-toggler--opened")){
+            hamburger.classList.remove("header-main__nav-toggler--opened");
+            hamburger.classList.add("header-main__nav-toggler--closed");
+            mobileMenu.classList.add("header-main__navigation--closed");
+        }
+    })
+</script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
     window.ga = function () {
