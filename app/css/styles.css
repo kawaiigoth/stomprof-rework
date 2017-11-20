@@ -726,6 +726,28 @@ textarea {
   color: #fff;
   background-color: #32b4aa;
 }
+.link {
+  color: #32b4aa;
+}
+.link:link {
+  text-decoration: none;
+}
+.link:visited {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: none;
+}
+.link:active {
+  text-decoration: none;
+}
+.link:hover {
+  color: #74d8d1;
+}
+.social {
+  width: 50px;
+  height: 50px;
+}
 .header-main__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,4 +887,173 @@ textarea {
   color: #222;
   line-height: 35px;
   text-transform: uppercase;
+}
+.footer-main {
+  padding-top: 30px;
+  border-top: 1px solid #ababab;
+}
+.footer-main__wrap {
+  width: 320px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (min-width : 768px) {
+  .footer-main__wrap {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) {
+  .footer-main__wrap {
+    width: 1015px;
+  }
+}
+.footer-main__column-title {
+  display: inline-block;
+  margin: 10px 0;
+  font: 400 15px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+}
+.footer-main__column-title a {
+  color: #32b4aa;
+  color: #222;
+}
+.footer-main__column-title a:link {
+  text-decoration: none;
+}
+.footer-main__column-title a:visited {
+  text-decoration: none;
+}
+.footer-main__column-title a:hover {
+  text-decoration: none;
+}
+.footer-main__column-title a:active {
+  text-decoration: none;
+}
+.footer-main__column-title a:hover {
+  color: #74d8d1;
+}
+.footer-main__navigation {
+  display: none;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.footer-main__column {
+  text-align: left;
+}
+.footer-main__list {
+  display: none;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-main__list-item {
+  padding: 0;
+  margin: 5px 0;
+}
+.footer-main__list-item a {
+  color: #32b4aa;
+  font: 400 15px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #919191;
+}
+.footer-main__list-item a:link {
+  text-decoration: none;
+}
+.footer-main__list-item a:visited {
+  text-decoration: none;
+}
+.footer-main__list-item a:hover {
+  text-decoration: none;
+}
+.footer-main__list-item a:active {
+  text-decoration: none;
+}
+.footer-main__list-item a:hover {
+  color: #74d8d1;
+}
+.footer-main__info {
+  width: 50%;
+  padding: 10px 10%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 365px;
+}
+.footer-main__address {
+  font: 400 16px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+}
+.footer-main__phonenumber {
+  font: 400 20px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+}
+.footer-main__mail {
+  font: 400 16px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+}
+.footer-main__social {
+  display: block;
+}
+@media (min-width : 768px) {
+  .footer-main__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-main__column {
+    padding: 0 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width : 1200px) {
+  .footer-main__column-title {
+    margin: 10px 0 0px 0;
+  }
+  .footer-main__list {
+    display: block;
+  }
+  .footer-main__info {
+    text-align: left;
+    padding: 0;
+  }
+  .footer-main__navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
