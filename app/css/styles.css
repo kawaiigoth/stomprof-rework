@@ -751,6 +751,17 @@ textarea {
 .header-main {
   border-bottom: 1px solid #ababab;
 }
+.header-main__info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 50px;
+  width: 80%;
+}
 .header-main__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,6 +810,7 @@ textarea {
   min-width: 150px;
 }
 .header-main__logo {
+  z-index: 1;
   display: inline-block;
   height: 50px;
   width: 50px;
@@ -974,6 +986,11 @@ textarea {
   text-transform: uppercase;
 }
 .header-main__navigation-list--desktop {
+  padding: 0;
+  padding-left: 50px;
+  padding-top: 15px;
+  margin: 0;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,7 +1031,7 @@ textarea {
     font: 400 25px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
     color: #222;
-    line-height: 25px;
+    line-height: 50px;
     padding-left: 0 ;
   }
   .header-main__time--desktop {

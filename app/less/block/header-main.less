@@ -1,6 +1,14 @@
 .header-main {
   border-bottom: 1px solid darken(@bg-color-nav, 30%);
 
+  &__info-wrap{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 80%
+  }
+
   &__top {
     display: flex;
     position: fixed;
@@ -43,6 +51,7 @@
   }
 
   &__logo {
+    z-index: 1;
     display: inline-block;
     height: 50px;
     width: 50px;
@@ -191,6 +200,11 @@
     }
 
     &--desktop {
+      padding: 0;
+      padding-left: 50px;
+      padding-top: 15px;
+      margin: 0;
+      background-color: #fff;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -223,7 +237,7 @@
     }
     &__phone-number{
       .font(25px);
-      line-height: 25px;
+      line-height: 50px;
       padding-left:0 ;
     }
     &__time--desktop{
