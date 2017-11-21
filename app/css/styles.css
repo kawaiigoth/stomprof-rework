@@ -766,8 +766,29 @@ textarea {
   width: 100%;
   height: 50px;
 }
+.header-main__column {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .header-main__phone-number {
   display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  font: 400 20px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+  padding-left: 20px;
+  line-height: 50px;
+  min-width: 170px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.header-main__address {
+  display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 50px;
@@ -776,9 +797,6 @@ textarea {
   color: #222;
   line-height: 50px;
   min-width: 150px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 .header-main__logo {
   display: inline-block;
@@ -848,6 +866,14 @@ textarea {
   max-height: 0;
   overflow: hidden;
 }
+.header-main__navigation--desktop {
+  display: none;
+  position: static;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-height: inherit;
+  width: 100%;
+}
 .header-main__time-title {
   font: 400 12px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
@@ -869,6 +895,16 @@ textarea {
           box-sizing: border-box;
   text-align: center;
 }
+.header-main__link {
+  width: 100%;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+.header-main__time--desktop {
+  display: none;
+}
 .header-main__button-wrap {
   width: 100%;
   text-align: center;
@@ -883,6 +919,42 @@ textarea {
 .header-main__button:hover {
   color: #32b4aa;
   background-color: #fff;
+}
+.header-main__button--desktop {
+  display: inline-block;
+  text-align: center;
+  font: 400 14px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #32b4aa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #32b4aa;
+  padding: 10px 30px;
+  margin: 16px auto 1px;
+  width: 180px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 210px;
+  height: 43.5px;
+  display: none;
+}
+.header-main__button--desktop:link {
+  text-decoration: none;
+}
+.header-main__button--desktop:visited {
+  text-decoration: none;
+}
+.header-main__button--desktop:hover {
+  text-decoration: none;
+}
+.header-main__button--desktop:active {
+  text-decoration: none;
+}
+.header-main__button--desktop:hover {
+  color: #fff;
+  background-color: #32b4aa;
 }
 .header-main__navigation-list {
   list-style: none;
@@ -901,7 +973,54 @@ textarea {
   line-height: 35px;
   text-transform: uppercase;
 }
+.header-main__navigation-list--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
 @media (min-width : 1200px) {
+  .header-main__button--desktop {
+    display: inline-block;
+  }
+  .header-main__link {
+    display: inline-block;
+  }
+  .header-main__address {
+    display: inline-block;
+  }
+  .header-main__navigation--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-main__navigation-list--desktop {
+    width: 100%;
+  }
+  .header-main__column {
+    padding-left: 50px;
+  }
+  .header-main__phone-number {
+    font: 400 25px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #222;
+    line-height: 25px;
+    padding-left: 0 ;
+  }
+  .header-main__time--desktop {
+    display: inline-block;
+    text-align: left;
+  }
   .header-main__nav-toggler {
     display: none;
   }
@@ -911,6 +1030,8 @@ textarea {
     padding-top: 20px;
     position: static;
     height: 150px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .header-main__under-top {
     display: none;

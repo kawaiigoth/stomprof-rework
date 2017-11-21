@@ -16,14 +16,30 @@
     height: 50px;
   }
 
+  &__column{
+    margin: 0;
+    flex: 1;
+  }
+
   &__phone-number {
+
     display: inline-block;
+    box-sizing: border-box;
+    height: 50px;
+    .font(20px,#222,400);
+    padding-left: 20px;
+    line-height: 50px;
+    min-width: 170px;
+    flex: 1;
+  }
+
+  &__address {
+    display: none;
     box-sizing: border-box;
     height: 50px;
     .font(14px,#222,400);
     line-height: 50px;
     min-width: 150px;
-    flex: 1;
   }
 
   &__logo {
@@ -93,6 +109,13 @@
       max-height: 0;
       overflow: hidden;
     }
+    &--desktop{
+      display: none;
+      position: static;
+      flex-wrap: nowrap;
+      max-height: inherit;
+      width: 100%;
+    }
   }
 
   &__time-title {
@@ -115,6 +138,17 @@
     text-align: center;
   }
 
+  &__link {
+    width: 100%;
+    display: none;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  &__time--desktop{
+    display: none;
+  }
+
   &__button-wrap{
     width: 100%;
     text-align: center;
@@ -127,6 +161,13 @@
     &:hover{
       color: @main-color-main;
       background-color: #fff;
+    }
+    &--desktop{
+
+      .btn;
+      width: 210px;
+      height: (24px + 19.5px);
+      display: none;
     }
   }
 
@@ -148,9 +189,47 @@
       line-height: 35px;
       text-transform: uppercase;
     }
+
+    &--desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: inherit;
+      align-content: space-around;
+      li {
+
+      }
+    }
   }
 
   @media @desktop-widths {
+    &__button--desktop{
+      display: inline-block;
+    }
+    &__link{
+      display: inline-block;
+    }
+    &__address{
+      display: inline-block;
+    }
+    &__navigation--desktop{
+      display: flex;
+    }
+    &__navigation-list--desktop{
+      width: 100%;
+    }
+    &__column {
+      padding-left: 50px;
+    }
+    &__phone-number{
+      .font(25px);
+      line-height: 25px;
+      padding-left:0 ;
+    }
+    &__time--desktop{
+      display: inline-block;
+      text-align: left;
+    }
     &__nav-toggler{
       display: none;
     }
@@ -159,6 +238,7 @@
       padding-top: 20px;
       position: static;
       height: 150px;
+      flex-wrap: wrap;
     }
     &__under-top{
       display: none;
