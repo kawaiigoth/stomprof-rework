@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Стоматология "Профессионал"</title>
+    <meta name="description" content="Стоматология 'Профессионал', одна из самых лучших в городе Энгельсе.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+</head>
+<body>
+<header class="header-main">
+
+    <div class="header-main__top">
+        <a class="header-main__logo"></a>
+        <p class="header-main__column">
+        <span class="header-main__phone-number">8 499 <b>245-62-68</b></span><br>
+        <span class="header-main__time">Пн - Сб 9:00 — 19:00</span>
+        </p>
+        <p class="header-main__column">
+            <span>ул. Усачева, 19Ак2</span><br>
+            <a class="link" href="#">ortodontelit@mail.ru</a>
+        </p>
+        <p class="header-main__column">
+            <a class="btn header-main__button" href="#">Связаться с нами</a>
+        </p>
+        <div id="Hamburger" class="header-main__nav-toggler header-main__nav-toggler--closed"></div>
+    </div>
+    <div class="header-main__under-top"></div>
+    <nav id="MobileMenu" class="header-main__navigation-mobile header-main__navigation-mobile--closed">
+        <span class="header-main__time-title">Время работы:</span>
+        <span class="header-main__time-mobile"><b>с 9:00 до 19:00, Пн — Сб</b></span>
+        <div class="header-main__button-wrap"><a href="#" class="btn header-main__button-mobile">Записаться</a></div>
+        <ul class="header-main__navigation-list">
+            <li><a>Клиника</a></li>
+            <li><a>Услуги</a></li>
+            <li><a>Цены</a></li>
+            <li><a>Акции</a></li>
+            <li><a>Пациентам</a></li>
+            <li><a>Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main-content">
+    <div class="block red"></div>
+    <div class="block blue"></div>
+</main>
+
+<footer class="footer-main">
+    <div class="footer-main__wrap">
+    <div class="footer-main__info">
+        <p class="footer-main__address">
+            © Стоматология «Ортодонт-Элит»,<br>
+            Москва, метро Спортивная
+        </p>
+        <p class="footer-main__phonenumber">
+            8 499 <b>245-62-68</b>
+        </p>
+        <p class="footer-main__address">
+            ул. Усачева, 19Ак2
+        </p>
+        <p class="footer-main__mail">
+        <a class="link" href="#">ortodontelit@mail.ru</a>
+        </p>
+        <p>
+            <a href="#">
+                <img class="social" src="img/social_vk.png">
+            </a>
+        </p>
+
+    </div>
+    <nav class="footer-main__navigation">
+    <div class="footer-main__column">
+        <h2 class="footer-main__column-title"><a href="#">Клиника</a> </h2>
+        <ul class="footer-main__list">
+            <li class="footer-main__list-item"><a href="#">О клинике</a></li>
+            <li class="footer-main__list-item"><a href="#">Сотрудники</a></li>
+            <li class="footer-main__list-item"><a href="#">Отзывы</a></li>
+        </ul>
+        <h2 class="footer-main__column-title"><a href="#">Цены</a> </h2>
+        <h2 class="footer-main__column-title"><a href="#">Акции</a></h2>
+    </div>
+    <div class="footer-main__column">
+        <h2 class="footer-main__column-title"><a href="#">Услуги</a> </h2>
+        <ul class="footer-main__list">
+            <li class="footer-main__list-item"><a href="#">Ортодонтия</a></li>
+            <li class="footer-main__list-item"><a href="#">Гигиена</a></li>
+            <li class="footer-main__list-item"><a href="#">Терапия</a></li>
+            <li class="footer-main__list-item"><a href="#">Ортопедия</a></li>
+            <li class="footer-main__list-item"><a href="#">Импалтология</a></li>
+        </ul>
+    </div>
+    <div class="footer-main__column">
+        <h2 class="footer-main__column-title"><a href="#">Пациентам</a> </h2>
+        <ul class="footer-main__list">
+            <li class="footer-main__list-item"><a href="#">Документы</a></li>
+            <li class="footer-main__list-item"><a href="#">Памятки пациентам</a></li>
+            <li class="footer-main__list-item"><a href="#">Налоговый вычет</a></li>
+        </ul>
+    </div>
+    </nav>
+    </div>
+</footer>
+<!-- build:js js/main.min.js -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+    var hamburger = document.getElementById("Hamburger");
+    var mobileMenu = document.getElementById("MobileMenu");
+    hamburger.onclick = (function (e) {
+        if (hamburger.classList.contains("header-main__nav-toggler--closed")) {
+            hamburger.classList.remove("header-main__nav-toggler--closed");
+            hamburger.classList.add("header-main__nav-toggler--opened");
+            mobileMenu.classList.remove("header-main__navigation--closed");
+        } else if (hamburger.classList.contains("header-main__nav-toggler--opened")) {
+            hamburger.classList.remove("header-main__nav-toggler--opened");
+            hamburger.classList.add("header-main__nav-toggler--closed");
+            mobileMenu.classList.add("header-main__navigation--closed");
+        }
+    })
+</script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
