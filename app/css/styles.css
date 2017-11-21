@@ -752,11 +752,17 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  background-color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid #ababab;
   height: 50px;
   width: 100%;
+}
+.header-main__under-top {
+  width: 100%;
+  height: 50px;
 }
 .header-main__phone-number {
   display: inline-block;
@@ -821,6 +827,7 @@ textarea {
           box-shadow: 0 7px 0 #32b4aa, 0 14px 0 #32b4aa;
 }
 .header-main__navigation {
+  position: fixed;
   background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1056,4 +1063,28 @@ textarea {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+.main-content {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width : 768px) {
+  .main-content {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) {
+  .main-content {
+    width: 1015px;
+  }
+}
+.block {
+  width: 100%;
+  height: 500px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
 }
