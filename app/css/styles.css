@@ -748,6 +748,9 @@ textarea {
   width: 50px;
   height: 50px;
 }
+.header-main {
+  border-bottom: 1px solid #ababab;
+}
 .header-main__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,7 +759,6 @@ textarea {
   background-color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 1px solid #ababab;
   height: 50px;
   width: 100%;
 }
@@ -904,6 +906,8 @@ textarea {
     display: none;
   }
   .header-main__top {
+    width: 320px;
+    margin: 0 auto;
     padding-top: 20px;
     position: static;
     height: 150px;
@@ -916,6 +920,16 @@ textarea {
     height: 120px;
     background-size: 120px;
     background-image: url("../img/logo.png");
+  }
+}
+@media (min-width : 1200px) and (min-width : 768px) {
+  .header-main__top {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) and (min-width : 1200px) {
+  .header-main__top {
+    width: 1015px;
   }
 }
 .footer-main {
