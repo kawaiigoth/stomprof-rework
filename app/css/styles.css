@@ -783,6 +783,10 @@ textarea {
   height: 50px;
   width: 50px;
   margin-left: 5px;
+  background-size: 45px;
+  background-position: 0 2px;
+  background-image: url("../img/logo_small_low.png");
+  background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -894,6 +898,25 @@ textarea {
   color: #222;
   line-height: 35px;
   text-transform: uppercase;
+}
+@media (min-width : 1200px) {
+  .header-main__nav-toggler {
+    display: none;
+  }
+  .header-main__top {
+    padding-top: 20px;
+    position: static;
+    height: 150px;
+  }
+  .header-main__under-top {
+    display: none;
+  }
+  .header-main__logo {
+    width: 120px;
+    height: 120px;
+    background-size: 120px;
+    background-image: url("../img/logo.png");
+  }
 }
 .footer-main {
   padding-top: 30px;

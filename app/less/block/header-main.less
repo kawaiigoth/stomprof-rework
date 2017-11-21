@@ -30,7 +30,10 @@
     height: 50px;
     width: 50px;
     margin-left: 5px;
-
+    background-size: 45px;
+    background-position: 0 2px;
+    background-image: url("../img/logo_small_low.png");
+    background-repeat: no-repeat;
     box-sizing: border-box;
     text-align: center;
     line-height: 49px;
@@ -143,6 +146,26 @@
       .font(16px,@text-color-black,500);
       line-height: 35px;
       text-transform: uppercase;
+    }
+  }
+
+  @media @desktop-widths {
+    &__nav-toggler{
+      display: none;
+    }
+    &__top{
+      padding-top: 20px;
+      position: static;
+      height: 150px;
+    }
+    &__under-top{
+      display: none;
+    }
+    &__logo{
+      width: 120px;
+      height: 120px;
+      background-size: 120px;
+      background-image: url("../img/logo.png");
     }
   }
 }
