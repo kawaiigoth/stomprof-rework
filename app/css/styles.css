@@ -748,18 +748,30 @@ textarea {
   width: 50px;
   height: 50px;
 }
+.header-main__address {
+  display: inline-block;
+  font: 400 16px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+}
 .header-main__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid #ababab;
   height: 50px;
   width: 100%;
+  background-color: #fff;
+}
+.header-main__under-top {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
 }
 .header-main__phone-number {
-  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 50px;
@@ -781,6 +793,11 @@ textarea {
           box-sizing: border-box;
   text-align: center;
   line-height: 49px;
+  background-image: url("../img/logo_small_low.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 0px 2px;
+  padding: 5px;
 }
 .header-main__nav-toggler {
   display: inline-block;
@@ -820,7 +837,9 @@ textarea {
   -webkit-box-shadow: 0 7px 0 #32b4aa, 0 14px 0 #32b4aa;
           box-shadow: 0 7px 0 #32b4aa, 0 14px 0 #32b4aa;
 }
-.header-main__navigation {
+.header-main__navigation-mobile {
+  position: fixed;
+  top: 50px;
   background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,7 +850,7 @@ textarea {
   transition: all 0.25s;
   max-height: 999px;
 }
-.header-main__navigation--closed {
+.header-main__navigation-mobile--closed {
   max-height: 0;
   overflow: hidden;
 }
@@ -847,6 +866,14 @@ textarea {
           box-sizing: border-box;
 }
 .header-main__time {
+  display: none;
+  font: 400 15px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.header-main__time-mobile {
   width: 100%;
   font: 400 15px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
@@ -861,13 +888,16 @@ textarea {
   text-align: center;
 }
 .header-main__button {
+  display: none;
+}
+.header-main__button-mobile {
   font: 400 14px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   color: #fff;
   width: 250px;
   background-color: #32b4aa;
 }
-.header-main__button:hover {
+.header-main__button-mobile:hover {
   color: #32b4aa;
   background-color: #fff;
 }
@@ -887,6 +917,38 @@ textarea {
   color: #222;
   line-height: 35px;
   text-transform: uppercase;
+}
+@media (min-width : 1200px) {
+  .header-main__time {
+    display: inline-block;
+  }
+  .header-main__top {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: static;
+    height: auto;
+  }
+  .header-main__logo {
+    width: 100px;
+    height: 100px;
+  }
+  .header-main__nav-toggler {
+    display: none;
+  }
+  .header-main__navigation-mobile {
+    display: none;
+  }
+}
+@media (min-width : 1200px) and (min-width : 768px) {
+  .header-main__top {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) and (min-width : 1200px) {
+  .header-main__top {
+    width: 1015px;
+  }
 }
 .footer-main {
   padding-top: 30px;
@@ -1056,4 +1118,28 @@ textarea {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+.main-content {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width : 768px) {
+  .main-content {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) {
+  .main-content {
+    width: 1015px;
+  }
+}
+.block {
+  width: 100%;
+  height: 500px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
 }
