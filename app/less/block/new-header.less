@@ -1,0 +1,43 @@
+
+.new-header {
+
+  display: none;
+  justify-content: space-between;
+  align-items: stretch;
+
+  padding-top: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 48px;
+  width: 100%;
+  min-width: 400px;
+  background-color: #ffea5a;
+
+  &__column{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid green;
+  }
+  &__phone{
+    .font(16px,#222,500);
+  }
+  &__info{
+    display: inline-block;
+  }
+  &__logo{
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-image: url("../img/logo_small_low.png");
+    background-repeat: no-repeat;
+    background-size: 37px;
+  }
+  &__nav-toggler{
+    width: 40px;
+    height: 40px;
+  }
+  @media @desktop-widths {
+    padding-top: 29px;
+    height: 139px;
+  }
+}

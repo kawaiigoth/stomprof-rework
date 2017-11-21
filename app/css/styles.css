@@ -1263,3 +1263,51 @@ textarea {
 .blue {
   background-color: blue;
 }
+.new-header {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-top: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 48px;
+  width: 100%;
+  min-width: 400px;
+  background-color: #ffea5a;
+}
+.new-header__column {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid green;
+}
+.new-header__phone {
+  font: 400 16px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #222;
+}
+.new-header__info {
+  display: inline-block;
+}
+.new-header__logo {
+  display: block;
+  width: 37px;
+  height: 37px;
+  background-image: url("../img/logo_small_low.png");
+  background-repeat: no-repeat;
+  background-size: 37px;
+}
+.new-header__nav-toggler {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width : 1200px) {
+  .new-header {
+    padding-top: 29px;
+    height: 139px;
+  }
+}
