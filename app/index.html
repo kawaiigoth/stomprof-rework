@@ -13,50 +13,55 @@
     <!-- endbuild -->
 </head>
 <body>
-<header class="header-main">
 
-    <div class="header-main__top">
-        <a class="header-main__logo"></a>
-        <div class="header-main__info-wrap">
-            <p class="header-main__column">
-                <span class="header-main__phone-number">8 499 <b>245-62-69</b></span>
-                <span class="header-main__time header-main__time--desktop">Пн - Сб 9:00 — 19:00</span>
-            </p>
-            <p class="header-main__column">
-                <span class="header-main__address">ул. Усачева, 19Ак2</span>
-                <a class="link header-main__link">info@orthodont-elit.ru</a>
-            </p>
-            <p class="header-main__column">
-                <a class="btn header-main__button header-main__button--desktop">Связаться с нами</a>
-            </p>
-            <nav class="header-main__navigation header-main__navigation--desktop">
-                <ul class="header-main__navigation-list header-main__navigation-list--desktop">
-                    <li><a href="#">Клиника</a></li>
-                    <li><a href="#">Цены и Услуги</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Контакты</a></li>
+<header class="new-header">
+    <div class="new-header__wrap">
+        <div class="new-header__logo-wrap">
+            <a class="new-header__logo"></a>
+        </div>
+        <div class="new-header__info-wrap">
+            <div class="new-header__info">
+                <p class="new-header__phone"> 8 909 <b>33-84-520</b></p>
+                <p class="new-header__time">Пн - Сб 9:00 — 19:00</p>
+            </div>
+            <div class="new-header__info">
+                <p class="new-header__address">ул. Устиновка. 16ка2</p>
+                <p class="new-header__mail">
+                    <a class="link">doctor@mail.ru</a>
+                </p>
+            </div>
+            <div class="new-header__button-wrap">
+                <a class="btn new-header__call-us-button">Связаться с нами</a>
+            </div>
+            <nav class="new-header__navigation">
+                <ul class="new-header__navigation-list">
+                    <li><a href="">Клиника</a></li>
+                    <li><a href="">Услуги и цены</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Контакты</a></li>
                 </ul>
             </nav>
         </div>
-        <div id="Hamburger" class="header-main__nav-toggler header-main__nav-toggler--closed"></div>
+        <div class="new-header__toggler-wrap">
+            <div id="Hamburger" class="new-header__nav-toggler new-header__nav-toggler--closed"></div>
+        </div>
     </div>
-    <div class="header-main__under-top"></div>
-    <nav id="MobileMenu" class="header-main__navigation header-main__navigation--closed">
-        <span class="header-main__time-title">Время работы:</span>
-        <span class="header-main__time"><b>с 9:00 до 19:00, Пн — Сб</b></span>
-        <div class="header-main__button-wrap"><a href="#" class="btn header-main__button">Записаться</a></div>
-        <ul class="header-main__navigation-list">
-            <li><a>Клиника</a></li>
-            <li><a>Услуги</a></li>
-            <li><a>Цены</a></li>
-            <li><a>Акции</a></li>
-            <li><a>Пациентам</a></li>
-            <li><a>Контакты</a></li>
+    <nav id="MobileMenu" class="new-header__navigation-mobile new-header__navigation-mobile--closed">
+        <p class="new-header__timetable">
+            <span class="new-header__time-title"> Время работы:</span>
+            <span class="new-header__time-mobile"> с 9:00 до 19:00, Пн — Сб</span>
+        </p>
+        <div class="new-header__button-wrap-mobile">
+            <a href="#" class="btn new-header__button-mobile"> Записаться</a>
+        </div>
+        <ul class="new-header__navigation-mobile-list">
+            <li><a href="#">Клиника</a> </li>
+            <li><a href="#">Услуги и цены</a> </li>
+            <li><a href="#">Акции</a> </li>
+            <li><a href="#">Контакты</a> </li>
         </ul>
     </nav>
 </header>
-
-
 
 <main class="main-content">
     <div class="block red">
@@ -134,14 +139,14 @@
     var hamburger = document.getElementById("Hamburger");
     var mobileMenu = document.getElementById("MobileMenu");
     hamburger.onclick = (function (e) {
-        if (hamburger.classList.contains("header-main__nav-toggler--closed")) {
-            hamburger.classList.remove("header-main__nav-toggler--closed");
-            hamburger.classList.add("header-main__nav-toggler--opened");
-            mobileMenu.classList.remove("header-main__navigation--closed");
-        } else if (hamburger.classList.contains("header-main__nav-toggler--opened")) {
-            hamburger.classList.remove("header-main__nav-toggler--opened");
-            hamburger.classList.add("header-main__nav-toggler--closed");
-            mobileMenu.classList.add("header-main__navigation--closed");
+        if (hamburger.classList.contains("new-header__nav-toggler--closed")) {
+            hamburger.classList.remove("new-header__nav-toggler--closed");
+            hamburger.classList.add("new-header__nav-toggler--opened");
+            mobileMenu.classList.remove("new-header__navigation-mobile--closed");
+        } else if (hamburger.classList.contains("new-header__nav-toggler--opened")) {
+            hamburger.classList.remove("new-header__nav-toggler--opened");
+            hamburger.classList.add("new-header__nav-toggler--closed");
+            mobileMenu.classList.add("new-header__navigation-mobile--closed");
         }
     })
 </script>
