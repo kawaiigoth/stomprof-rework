@@ -55,15 +55,30 @@
             <a href="#" class="btn new-header__button-mobile"> Записаться</a>
         </div>
         <ul class="new-header__navigation-mobile-list">
-            <li><a href="#">Клиника</a> </li>
-            <li><a href="#">Услуги и цены</a> </li>
-            <li><a href="#">Акции</a> </li>
-            <li><a href="#">Контакты</a> </li>
+            <li><a href="#">Клиника</a></li>
+            <li><a href="#">Услуги и цены</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
         </ul>
     </nav>
 </header>
 
 <main class="main-content">
+    <section>
+        <div class="main-content__offer-carousel-wraper">
+            <ul class="main-content__offer-carousel">
+                <li>
+                    <a href="#">
+                        <img src="http://via.placeholder.com/980x500">
+                    </a>
+                </li>
+            </ul>
+            <nav class="main-content__offer-carousel-navigation">
+                <input type="radio" name="carousel" value="1">
+                <input type="radio" name="carousel" value="2">
+            </nav>
+        </div>
+    </section>
     <div class="block red">
 
     </div>
@@ -134,21 +149,11 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/toggler.js"></script>
+<script src="js/carousel.js"></script>
 <!-- endbuild -->
 <script>
-    var hamburger = document.getElementById("Hamburger");
-    var mobileMenu = document.getElementById("MobileMenu");
-    hamburger.onclick = (function (e) {
-        if (hamburger.classList.contains("new-header__nav-toggler--closed")) {
-            hamburger.classList.remove("new-header__nav-toggler--closed");
-            hamburger.classList.add("new-header__nav-toggler--opened");
-            mobileMenu.classList.remove("new-header__navigation-mobile--closed");
-        } else if (hamburger.classList.contains("new-header__nav-toggler--opened")) {
-            hamburger.classList.remove("new-header__nav-toggler--opened");
-            hamburger.classList.add("new-header__nav-toggler--closed");
-            mobileMenu.classList.add("new-header__navigation-mobile--closed");
-        }
-    })
+
 </script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
