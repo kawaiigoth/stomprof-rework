@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700|Open+Sans:400,700&subset=cyrillic-ext);
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -511,7 +512,7 @@ textarea {
 
 @font-face {
     font-family: SegoeUI;
-    src: url(../fonts/segoeui.woff);
+    src: url(../fonts/segoeuil.woff);
 }
 
 
@@ -1426,4 +1427,46 @@ body {
   .main-about__column {
     width: 30%;
   }
+}
+.main-contacts__wrap {
+  margin: 0 auto;
+}
+@media (min-width : 768px) {
+  .main-contacts__wrap {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) {
+  .main-contacts__wrap {
+    width: 1015px;
+  }
+}
+.main-contacts__title {
+  font: 100 35px/1 'SegoeUI', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #222;
+  text-align: center;
+}
+.main-contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+.main-contacts__block {
+  width: 33%;
+  font: 100 24px/1 'SegoeUI', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #222;
+}
+.main-contacts__week {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-contacts__week li {
+  display: inline-block;
 }
