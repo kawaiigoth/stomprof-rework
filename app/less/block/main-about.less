@@ -1,0 +1,32 @@
+.main-about{
+  background-color: lighten(@color-background,0%);
+  &__wrap{
+    .container();
+    padding: 10px 15px;
+  }
+  &__title{
+    .font-alt(35px,@color-text,100);
+    text-align: center;
+  }
+  &__text{
+    .font(13px,@color-text-alt,400);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  &__column{
+    display: inline-block;
+    margin: 0 20px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  @media @tablet-widths {
+    &__text {
+      flex-wrap: nowrap;
+    }
+    &__column{
+      width: 30%;
+    }
+  }
+}

@@ -509,9 +509,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
+@font-face {
+    font-family: SegoeUI;
+    src: url(../fonts/segoeui.woff);
+}
 
 
 
@@ -750,7 +751,20 @@ textarea {
   width: 50px;
   height: 50px;
 }
+.tablet-hidden {
+  display: none;
+}
+@media (min-width : 1200px) {
+  .tablet-hidden {
+    display: block !important;
+  }
+}
+body {
+  min-width: 335px!important;
+}
 .footer-main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 30px;
   border-top: 1px solid #ababab;
 }
@@ -865,7 +879,7 @@ textarea {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-width: 365px;
+  min-width: 335px;
 }
 .footer-main__address {
   font: 400 16px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -923,36 +937,9 @@ textarea {
 .main-content {
   padding-top: 60px;
 }
-.main-content__offer-carousel-wraper {
-  display: none;
-  background-color: #f7f7f7;
-}
-.main-content__offer-carousel {
-  margin: 0 auto;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (min-width : 768px) {
-  .main-content__offer-carousel {
-    width: 640px;
-  }
-}
-@media (min-width : 1200px) {
-  .main-content__offer-carousel {
-    width: 1015px;
-  }
-}
-.main-content__offer-carousel-navigation {
-  position: absolute;
-}
 @media (min-width : 1200px) {
   .main-content {
     padding-top: 0px;
-  }
-  .main-content__offer-carousel-wraper {
-    display: block;
   }
 }
 .block {
@@ -1026,7 +1013,7 @@ body {
           box-sizing: border-box;
 }
 .new-header__info {
-  width: 50%;
+  width: 100%;
   height: 60px;
   padding-left: 20px;
   -webkit-box-sizing: border-box;
@@ -1325,5 +1312,118 @@ body {
 @media (min-width : 1200px) and (min-width : 1200px) {
   .new-header__wrap {
     width: 1015px;
+  }
+}
+.services {
+  margin: 0 auto;
+}
+@media (min-width : 768px) {
+  .services {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) {
+  .services {
+    width: 1015px;
+  }
+}
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.services__list li {
+  display: inline-block;
+  margin: 0 auto;
+}
+.services__list li a {
+  display: inline-block;
+}
+.services__item {
+  height: 370px;
+  width: 253px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 33px 13px 0 13px;
+  border: 5px solid transparent;
+  text-align: center;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+.services__item:hover {
+  border-color: #f7f7f7;
+}
+.services__image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.services__title {
+  font: 400 28px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #222;
+}
+.services__text {
+  font: 400 14px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #919191;
+}
+.services__get-all {
+  display: block;
+  margin: 20px auto;
+}
+.main-about {
+  background-color: #f7f7f7;
+}
+.main-about__wrap {
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+@media (min-width : 768px) {
+  .main-about__wrap {
+    width: 640px;
+  }
+}
+@media (min-width : 1200px) {
+  .main-about__wrap {
+    width: 1015px;
+  }
+}
+.main-about__title {
+  font: 100 35px/1 'SegoeUI', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #222;
+  text-align: center;
+}
+.main-about__text {
+  font: 400 13px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #919191;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+.main-about__column {
+  display: inline-block;
+  margin: 0 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+@media (min-width : 768px) {
+  .main-about__text {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main-about__column {
+    width: 30%;
   }
 }
