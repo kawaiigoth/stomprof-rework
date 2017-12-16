@@ -11,6 +11,10 @@
     <!-- build:css css/styles.min.css -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin=""/>
+
 </head>
 <body>
 
@@ -65,53 +69,62 @@
 
 <main class="main-content">
 
-    <section class="carousel-adv">
-
+    <section class="main-carousel-adv">
+        <div class="main-carousel-adv__wrap"></div>
     </section>
 
-    <section class="services">
-        <ul class="services__list">
+    <section class="main-services">
+        <ul class="main-services__list">
             <li>
                 <a href="#" class="link">
-                    <article class="services__item">
-                        <img class="services__image" src="http://via.placeholder.com/100x100">
-                        <h2 class="services__title">Ортопедия</h2>
-                        <p class="services__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nunc tellus turpis, eleifend ac vestibulum non, accumsan ac libero.
-                            Suspendisse vel gravida mauris, in laoreet nunc.
+                    <article class="main-services__item">
+                        <div class="main-services__image main-services__image--therapy">
+                        </div>
+                        <h2 class="main-services__title">Терапия</h2>
+                        <p class="main-services__text">
+                            Лечение каналов, реставрация зубов.
                         </p>
                     </article>
                 </a>
             </li>
             <li>
                 <a href="#" class="link">
-                    <article class="services__item">
-                        <img class="services__image" src="http://via.placeholder.com/100x100">
-                        <h2 class="services__title">Ортопедия</h2>
-                        <p class="services__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nunc tellus turpis, eleifend ac vestibulum non, accumsan ac libero.
-                            Suspendisse vel gravida mauris, in laoreet nunc.
+                    <article class="main-services__item">
+                        <div class="main-services__image main-services__image--orto" src="http://via.placeholder.com/100x100">
+                        </div>
+                        <h2 class="main-services__title">Ортопедия</h2>
+                        <p class="main-services__text">
+                            Протезирование, установка коронок.
                         </p>
                     </article>
                 </a>
             </li>
             <li>
                 <a href="#" class="link">
-                    <article class="services__item">
-                        <img class="services__image" src="http://via.placeholder.com/100x100">
-                        <h2 class="services__title">Ортопедия</h2>
-                        <p class="services__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nunc tellus turpis, eleifend ac vestibulum non, accumsan ac libero.
-                            Suspendisse vel gravida mauris, in laoreet nunc.
+                    <article class="main-services__item">
+                        <div class="main-services__image main-services__image--surgery" src="http://via.placeholder.com/100x100">
+                        </div>
+                        <h2 class="main-services__title">Хирургия</h2>
+                        <p class="main-services__text">
+                            Удаление зубов, иссечение уздечки, лечение периостатита
+                        </p>
+                    </article>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="link">
+                    <article class="main-services__item">
+                        <div class="main-services__image main-services__image--implants" src="http://via.placeholder.com/100x100">
+                        </div>
+                        <h2 class="main-services__title">Имплантация зубов</h2>
+                        <p class="main-services__text">
+                            Вживление имплантов, наращивание костной ткани
                         </p>
                     </article>
                 </a>
             </li>
         </ul>
-        <a class="btn services__get-all" href="#">Все услуги</a>
+        <a class="btn main-services__get-all" href="#">Все услуги</a>
     </section>
 
     <section class="main-about">
@@ -146,7 +159,7 @@
         </div>
     </section>
 
-    <section class="main-content__doctors">
+    <section class="main-carousel-doctors">
 
     </section>
 
@@ -156,34 +169,35 @@
                 Контакты
             </h2>
             <div class="main-contacts__info">
-                <p class="main-contacts__block">
-                    <a href="#" class="link">8 (8453) 74 81 83</a> <br>
-                    +7 (917) 305 98 92 <br>
-                    Электронная почта<br>
-                    <a href="#" class="link">info@stomprof.com</a>
-                </p>
-                <p class="main-contacts__block">
-                    ул. Космонавтов, 13 <br>
-                    Энгельс, 413116
-                </p>
-                <p class="main-contacts__block">
-                    Режим работы:<br>
-                <ul class="main-contacts__week">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <br>
-                Пн - Вс 9:00 - 20:00
-                </p>
+                <div class="main-contacts__block">
+                    <p><a href="#" class="link">8 (8453) 74 81 83</a></p>
+                    <p>+7 (917) 305 98 92 </p>
+                    <p><a href="#" class="link">info@stomprof.com</a></p>
+                </div>
+                <div class="main-contacts__block">
+                    <p>ул. Космонавтов, 13 </p>
+                    <p>Энгельс, 413116</p>
+                </div>
+                <div class="main-contacts__block">
+                    <p>Режим работы:</p>
+                    <ul class="main-contacts__week">
+                        <li class="main-contacts__week-item"></li>
+                        <li class="main-contacts__week-item"></li>
+                        <li class="main-contacts__week-item"></li>
+                        <li class="main-contacts__week-item"></li>
+                        <li class="main-contacts__week-item"></li>
+                        <li class="main-contacts__week-item"></li>
+                        <li class="main-contacts__week-item main-contacts__week-item--wknd"></li>
+                    </ul>
+                    <p>
+                       9:00 - 20:00
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="main-content__map">
+    <section id="Map" class="main-map">
 
     </section>
 
@@ -244,6 +258,9 @@
         </nav>
     </div>
 </footer>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+        crossorigin=""></script>
 <!-- build:js js/main.min.js -->
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -253,7 +270,10 @@
 <script src="js/main.js"></script>
 <script src="js/toggler.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/map.js"></script>
 <!-- endbuild -->
+
+
 <script>
 
 </script>

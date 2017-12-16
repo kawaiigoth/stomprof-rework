@@ -1,26 +1,72 @@
-.main-contacts{
-    &__wrap{
-      .container();
-    }
-  &__title{
-    .font-alt(35px,@color-text,100);
+.main-contacts {
+  &__wrap {
+    .container();
+  }
+  &__title {
+    .font-alt(35px, @color-text, 100);
     text-align: center;
   }
-  &__info{
+  &__info {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
   }
   &__block {
-    width: 33%;
-    .font-alt(24px,@color-text,100);
+    p {
+      margin: 0;
+      padding: 7px 0;
+    }
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    .font-alt(24px, @color-text, 100);
   }
+
+  &__email-title {
+    display: none;
+  }
+
   &__week {
     list-style: none;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    li{
-      display: inline-block;
+  }
+  &__week-item {
+    margin: 10px 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: @color-background-alt;
+    &--wknd {
+      background-color: lighten(@color-background-alt, 30%);
+    }
+  }
+
+  @media @desktop-widths {
+    &__wrap{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__info {
+      align-content: space-around;
+      justify-content: center;
+      text-align: left;
+    }
+    &__block{
+      width: 30%;
+      padding-bottom: 0;
+    }
+    &__email-title {
+      display: block;
+    }
+    &__week{
+      justify-content: flex-start;
     }
   }
 }
