@@ -1,28 +1,111 @@
-.main-carousel-adv{
-  min-height: 300px;
+.main-carousel-adv {
   width: 100%;
-  height: auto;
   box-sizing: border-box;
   background-color: @color-background;
-  &__wrap{
-    background-image: url("http://via.placeholder.com/900x300");
-    background-repeat: no-repeat;
+
+  img {
     width: 100%;
-    height: auto;
+  }
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__item {
+      width: 100%;
+  }
+
+  .carousel-cell {
+
+  }
+
+  .flickity-prev-next-button {
+    width: 100px;
+    height: 100%;
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .flickity-prev-next-button.next {
+    right: 0px;
+    background: linear-gradient(to right, rgba(153, 153, 153, 0) 0%, rgba(202, 202, 202, 0) 0%, rgba(255, 255, 255, 0.2) 99%);
+  }
+
+  .flickity-prev-next-button.previous {
+    left: 0px;
+    background: linear-gradient(to left, rgba(153, 153, 153, 0) 0%, rgba(202, 202, 202, 0) 0%, rgba(255, 255, 255, 0.2) 99%);
+  }
+
+  .flickity-prev-next-button.next:hover {
+    background: linear-gradient(to right, rgba(153, 153, 153, 0) 0%, rgba(202, 202, 202, 0) 0%, rgba(255, 255, 255, 0.3) 99%);
+  }
+  .flickity-prev-next-button.previous:hover {
+    background: linear-gradient(to left, rgba(153, 153, 153, 0) 0%, rgba(202, 202, 202, 0) 0%, rgba(255, 255, 255, 0.3) 99%);
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: #222;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: #222;
+  }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+
+  .flickity-prev-next-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px #09F;
+  }
+
+  .flickity-page-dots {
+    bottom: 10px;
+    right: 200px;
+  }
+
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: darken(@color-background, 20%);
+    border: 2px solid transparent;;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background: @color-background;
+    border: 2px solid @color-background-alt;
+  }
+
+  .flickity-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+  }
+
+@media @desktop-widths{
+  &__wrap{
+    width: 60%;
     margin: 0 auto;
   }
-  @media @desktop-widths{
-    height: auto;
-    max-height: 500px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: @color-background;
-    &__wrap{
-      background-image: url("http://via.placeholder.com/900x500");
-      background-repeat: no-repeat;
-      width: 900px;
-      height: 500px;
-      margin: 0 auto;
-    }
+
+  .flickity-page-dots {
+    bottom: 50px;
+    right: 250px;
   }
+
+}
+/*
+  @media @desktop-widths {
+    padding-top: 0;
+    height: 500px;
+
+    &__wrap {
+      position: static;
+      width: 1000px;
+      height: inherit;
+      margin: 0 auto;
+
+    }
+  }*/
+
 }

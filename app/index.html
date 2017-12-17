@@ -70,8 +70,21 @@
 <main class="main-content">
 
     <section class="main-carousel-adv">
-        <div class="main-carousel-adv__wrap"></div>
+        <div class="main-carousel-adv__wrap">
+                <div class="main-carousel-adv__item carousel-cell">
+                    <img src="img/carousel/1.jpg">
+                </div>
+                <div class="main-carousel-adv__item carousel-cell">
+                    <img src="img/carousel/2.jpg">
+                </div>
+                <div class="main-carousel-adv__item carousel-cell">
+                    <img src="img/carousel/3.jpg">
+                </div>
+        </div>
     </section>
+
+
+
 
     <section class="main-services">
         <ul class="main-services__list">
@@ -275,7 +288,20 @@
 
 
 <script>
-
+    $('.main-carousel-adv__wrap').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true,
+        autoPlay: 10000,
+        wrapAround: true,
+        dragThreshold: 10,
+        arrowShape: {
+            x0: 10,
+            x1: 35, y1: 50,
+            x2: 45, y2: 50,
+            x3: 20
+        }
+    });
 </script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
