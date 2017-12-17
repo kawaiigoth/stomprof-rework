@@ -1,5 +1,7 @@
 .main-carousel-adv {
   width: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   background-color: @color-background;
 
@@ -12,11 +14,7 @@
   }
 
   &__item {
-      width: 100%;
-  }
-
-  .carousel-cell {
-
+    width: 100%;
   }
 
   .flickity-prev-next-button {
@@ -82,30 +80,16 @@
     outline: 0px auto -webkit-focus-ring-color;
   }
 
-@media @desktop-widths{
-  &__wrap{
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .flickity-page-dots {
-    bottom: 50px;
-    right: 250px;
-  }
-
-}
-/*
   @media @desktop-widths {
-    padding-top: 0;
-    height: 500px;
-
     &__wrap {
-      position: static;
-      width: 1000px;
-      height: inherit;
+      width: 60%;
       margin: 0 auto;
-
     }
-  }*/
 
+    .flickity-page-dots {
+      bottom: 50px;
+      right: 250px;
+    }
+
+  }
 }
