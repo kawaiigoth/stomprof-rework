@@ -1,0 +1,83 @@
+.main-carousel-doctors{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: @color-background;
+  &__wrap{
+    width: 100%;
+    background-image: url("../img/carousel-doctors/background.jpg");
+  }
+  &__item{
+    width: 100%;
+    margin-right: 500px ;
+    margin-left: 500px ;
+  }
+  &__item-wrap{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  &__info-block{
+    position: absolute;
+    border: 10px solid fade(#222,5%);
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background-color: #FFF;
+    height: 250px;
+    top: 50px;
+    left:20px;
+    right: 20px;
+    width: 250px;
+
+  }
+  &__title{
+    .font(14px,@color-link,600);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  &__name{
+    .font-alt(24px,@color-link,500);
+    line-height: 27px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+  &__info{
+    .font(14px,@color-text-alt,400);
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    width: 50%;
+  }
+  &__photo{
+
+    position: absolute;
+    width: 70%;
+    max-width: 350px;
+    bottom: 0;
+    left: 50%;
+  }
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+
+
+  @media @tablet-widths{
+    &__item{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  @media @desktop-widths{
+    &__item{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

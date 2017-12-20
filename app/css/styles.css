@@ -1781,3 +1781,87 @@ body {
     right: 250px;
   }
 }
+.main-carousel-doctors {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+.main-carousel-doctors__wrap {
+  width: 100%;
+  background-image: url("../img/carousel-doctors/background.jpg");
+}
+.main-carousel-doctors__item {
+  width: 100%;
+  margin-right: 500px ;
+  margin-left: 500px ;
+}
+.main-carousel-doctors__item-wrap {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.main-carousel-doctors__info-block {
+  position: absolute;
+  border: 10px solid rgba(34, 34, 34, 0.05);
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  background-color: #FFF;
+  height: 250px;
+  top: 50px;
+  left: 20px;
+  right: 20px;
+  width: 250px;
+}
+.main-carousel-doctors__title {
+  font: 400 14px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #32b4aa;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.main-carousel-doctors__name {
+  font: 100 24px/1 'SegoeUI', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #32b4aa;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.main-carousel-doctors__info {
+  font: 400 14px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #919191;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  width: 50%;
+}
+.main-carousel-doctors__photo {
+  position: absolute;
+  width: 70%;
+  max-width: 350px;
+  bottom: 0;
+  left: 50%;
+}
+.main-carousel-doctors .flickity-prev-next-button {
+  display: none;
+}
+@media (min-width : 768px) {
+  .main-carousel-doctors__item {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width : 1200px) {
+  .main-carousel-doctors__item {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
